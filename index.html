@@ -7,218 +7,292 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/style.css">
     <link href="/src/fontawesome/css/all.css" rel="stylesheet">
+    <script src="/src/js/jquery-3.6.0.min.js"></script>
+    <script src="/src/js/script.js"></script>
     <title>Andrei Nicusor</title>
 </head>
 
 <body>
-    <header>
-        <p id="Logo">Andrei Nicusor</p>
-        <nav>
-            <a href="#" class="nav-link">Home</a>
+    <header id="header">
+        <div id="header-section">
+            <a href="#" class="nav-link">
+                <p id="Logo">Andrei Nicusor</p>
+            </a>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div id="header-nav">
             <a href="#about-me" class="nav-link">About me</a>
             <a href="#education" class="nav-link">Education</a>
             <a href="#academic" class="nav-link">Skills</a>
             <a href="#work-experience">Experience</a>
             <a href="#projects" class="nav-link">Projects</a>
             <a href="#contact" class="nav-link">Contact</a>
-        </nav>
+        </div>
     </header>
 
-    <section id="hero">
-        <p id="hero-text">echo "Hello, world!"</p>
-    </section>
-
-    <section id="about-me">
-        <div class="section-title">
-            <hr>
-            <h2>About me</h2>
-        </div>
-
-        <div id="about-me-container">
-            <div id="about-me-avatar">
-                <h3>Who am I?</h3>
-                <img src="/src/images/main-image.jpg" alt="Profile image" id="profile-image">
-                <p class="name">Andrei Nicusor Andrei</p>
-                <p class="specializations">Passionate Full-Stack Web Developer, Native speaker of coding</p>
+    <div class="content">
+        <section id="hero">
+            <p id="hero-text">echo "Hello, world!"</p>
+        </section>
+    
+        <section id="about-me">
+            <div class="section-title">
+                <hr>
+                <h2>About me</h2>
             </div>
-
-            <div id="about-me-text">
-                <h3>Introduction</h3>
-                <p>Let me introduce myself. I am a very ambitious and curious person. I've have a passion for the IT since I was a teenager. 
-                    I've started to learn a lot of things about programming since then.
-                    My main passion is for Web Development (Full Stack) because I am really curious about how things are working on the server and I like to make a nice looking UI for a better UX.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="education">
-        <div class="section-title">
-            <hr>
-            <h2>Education</h2>
-        </div>
-
-        <div id="education-container">
-            <div id="academic">
-                <h3>School</h3>
-
-                <div class="school">
-                    <p>School: The Web</p>
-                    <p>Graduation: NaN</p>
-                    <p>Profile: Programming</p>
-                </div>
-
-                <div class="school">
-                    <p>School: University - ASE CSIE</p>
-                    <p>Graduation: 2023</p>
-                    <p>Profile: Informatics-Economics</p>
-                </div>
-
-                <div class="school">
-                    <p>School: High School</p>
-                    <p>Graduation: 2016</p>
-                    <p>Profile: Informatics and Mathematics</p>
-                </div>
-            </div>
-
-            <div id="certifications">
-                <h3>Certifications</h3>
-                <ul>
-                    <li>Responsive Web Design - freeCodeCamp</li>
-                    <li>JavaScript Algorithms and Data Structures - freeCodeCamp</li>
-                    <li>Databse Design - Oracle</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience">
-        <div class="section-title">
-            <hr>
-            <h2>Experience</h2>
-        </div>
-            <div id="experience-container">
-                <div class="work">
-                    <h3>Online Marketing Specialist</h3>
-                    <p>Period: Jan 2021 - Present</p>
-                    <p>Acquired skills:</p>
-                    <ul class="work-skills">
-                        <li>Google Ads</li>
-                        <li>Facebook Ads</li>
-                        <li>Speaking with clients (B2B)</li>
-                        <li>Meeting with clients (B2B)</li>
-                        <li>Working with external teams</li>
-                    </ul>
+    
+            <div id="about-me-container">
+                <div id="about-me-avatar">
+                    <h3>Who am I?</h3>
+                    <img src="/src/images/main-image.jpg" alt="Profile image" id="profile-image">
+                    <p class="name">Andrei Nicusor Andrei</p>
+                    <p class="specializations">Passionate Full-Stack Web Developer, Native speaker of coding</p>
                 </div>
     
-                <div class="work">
-                    <h3>Volunteer - Brigada de Voluntari</h3>
-                    <p>Period: Oct 2018 - Sep 2019</p>
-                    <p>Acquired skills:</p>
-                    <ul class="work-skills">
-                        <li>Team management</li>
-                        <li>Event organization</li>
-                        <li>Communication</li>
-                        <li>Team Working</li>
-                    </ul>
+                <div id="about-me-text" class="">
+                    <h3>Introduction</h3>
+                    <p>Let me introduce myself. I am a very ambitious and curious person. I've have a passion for the IT since I was a teenager. 
+                        I've started to learn a lot of things about programming since then.
+                        My main passion is for Web Development (Full Stack) because I am really curious about how things are working on the server and I like to make a nice looking UI for a better UX.
+                    </p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="education">
+            <div class="section-title">
+                <hr>
+                <h2>Education</h2>
+            </div>
+    
+            <div id="education-container">
+                <div id="academic">
+                    <h3>School</h3>
+    
+                    <div class="school">
+                        <p>School: The Web</p>
+                        <p>Graduation: NaN</p>
+                        <p>Profile: Programming</p>
+                    </div>
+    
+                    <div class="school">
+                        <p>School: University - ASE CSIE</p>
+                        <p>Graduation: 2023</p>
+                        <p>Profile: Informatics-Economics</p>
+                    </div>
+    
+                    <div class="school">
+                        <p>School: High School</p>
+                        <p>Graduation: 2016</p>
+                        <p>Profile: Informatics and Mathematics</p>
+                    </div>
                 </div>
     
-                <div class="work">
-                    <h3>Short term Jobs</h3>
-                    <p>Cashier at Mcdonalds, Food delivery etc..</p>
-                    <p>Acquired skills:</p>
-                    <ul class="work-skills">
-                        <li>Self Discipline</li>
-                        <li>Money management</li>
-                        <li>Time management</li>
+                <div id="certifications">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>Responsive Web Design - freeCodeCamp</li>
+                        <li>JavaScript Algorithms and Data Structures - freeCodeCamp</li>
+                        <li>Databse Design - Oracle</li>
                     </ul>
                 </div>
             </div>
-    </section>
-
-    <section id="skills">
-        <div class="section-title">
-            <hr>
-            <h2>Skills</h2>
-        </div>
-
-        <div id="skills-container">
-            <div class="skill">
-                <i class="fa-brands fa-html5"></i>
-                <p>HTML</p>
+        </section>
+    
+        <section id="experience">
+            <div class="section-title">
+                <hr>
+                <h2>Experience</h2>
+            </div>
+                <div id="experience-container">
+                    <div class="work">
+                        <h3>Online Marketing Specialist</h3>
+                        <p>Period: Jan 2021 - Present</p>
+                        <p>Acquired skills:</p>
+                        <ul class="work-skills">
+                            <li>Google Ads</li>
+                            <li>Facebook Ads</li>
+                            <li>Speaking with clients (B2B)</li>
+                            <li>Meeting with clients (B2B)</li>
+                            <li>Working with external teams</li>
+                        </ul>
+                    </div>
+        
+                    <div class="work">
+                        <h3>Volunteer - Brigada de Voluntari</h3>
+                        <p>Period: Oct 2018 - Sep 2019</p>
+                        <p>Acquired skills:</p>
+                        <ul class="work-skills">
+                            <li>Team management</li>
+                            <li>Event organization</li>
+                            <li>Communication</li>
+                            <li>Team Working</li>
+                        </ul>
+                    </div>
+        
+                    <div class="work">
+                        <h3>Short term Jobs</h3>
+                        <p>Cashier at Mcdonalds, Food delivery etc..</p>
+                        <p>Acquired skills:</p>
+                        <ul class="work-skills">
+                            <li>Self Discipline</li>
+                            <li>Money management</li>
+                            <li>Time management</li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+    
+        <section id="skills">
+            <div class="section-title">
+                <hr>
+                <h2>Skills</h2>
             </div>
 
-            <div class="skill">
-                <i class="fa-brands fa-css3"></i>
-                <p>CSS</p>
+            <div id="skills-container">
+                <div id="hard-skills">
+                    <h3>Hard Skills</h3>
+                    <div class="skill">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+        
+                    <div class="skill">
+                        <i class="fa-brands fa-css3"></i>
+                        <p>CSS</p>
+                    </div>
+        
+                    <div class="skill">
+                        <i class="fa-brands fa-sass"></i>
+                        <p>SASS</p>
+                    </div>
+        
+                    <div class="skill">
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <p>Bootstrap</p>
+                    </div>
+        
+                    <div class="skill">
+                        <i class="fa-brands fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+        
+                    <div class="skill">
+                        <i class="fa-brands fa-js"></i>
+                        <p>jQuery</p>
+                    </div>
+        
+                    <div class="skill">
+                        <i class="fa-brands fa-php"></i>
+                        <p>PHP</p>
+                    </div>
+        
+                    <div class="skill">
+                        <i class="fa-brands fa-wordpress"></i>
+                        <p>Wordpress</p>
+                    </div>
+        
+                    <div class="skill">
+                        <i class="fa-brands fa-git-square"></i>
+                        <p>Git</p>
+                    </div>
+
+                    <div class="skill">
+                        <i class="fa-solid fa-database"></i>
+                        <p>SQL</p>
+                    </div>
+                </div>
+                <div id="soft-skills">
+                    <h3>Soft-Skills</h3>
+
+                    <div class="skill">
+                        <i class="fa-solid fa-book"></i>
+                        <p>Fast Learner</p>
+                    </div>
+
+                    <div class="skill">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p>Team Working</p>
+                    </div>
+
+                    <div class="skill">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Time Management</p>
+                    </div>
+
+                    <div class="skill">
+                        <i class="fa-solid fa-note-sticky"></i>
+                        <p>Organization</p>
+                    </div>
+
+                    <div class="skill">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                        <p>Problem Solving</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-title">
+                <hr>
+                <h2>Projects</h2>
             </div>
 
-            <div class="skill">
-                <i class="fa-brands fa-sass"></i>
-                <p>SASS</p>
+            <div id="projects-container">
+                <a href="" class="project">
+                    <h4 class="project-title">TrendlyMag</h4>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p class="project-category">Category: Ecommerce</p>
+                    <p class="project-tech">Technologies: Wordpress, HTML, CSS, jQuery, PHP</p>
+                </a>
+
+                <a href="" class="project">
+                    <h4 class="project-title">Genzz</h4>
+                    <i class="fa-solid fa-align-left"></i>
+                    <p class="project-category">Category: Blog</p>
+                    <p class="project-tech">Technologies: Wordpress, HTML, CSS</p>
+                </a>
+
+                <a href="" class="project">
+                    <h4 class="project-title">Todo App</h4>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p class="project-category">Category: Web App</p>
+                    <p class="project-tech">Technologies: HTML, CSS, Sass, jQuery, PHP, MySQL</p>
+                </a>
             </div>
-
-            <div class="skill">
-                <i class="fa-brands fa-bootstrap"></i>
-                <p>Bootstrap</p>
+        </section>
+    
+        <section id="contact">
+            <div class="section-title">
+                <hr>
+                <h2>Contact</h2>
             </div>
-
-            <div class="skill">
-                <i class="fa-brands fa-js"></i>
-                <p>JavaScript</p>
+    
+            <div id="contact-container">
+                <a href="" class=contact-element>
+                    <i class="bi bi-linkedin"></i>
+                    <p>Linkedin</p>
+                </a>
+    
+                <a href="" class=contact-element>
+                    <i class="bi bi-envelope"></i>
+                    <p>Mail</p>
+                </a>
+    
+                <a href="" class=contact-element>
+                    <i class="bi bi-github"></i>
+                    <p>Github</p>
+                </a>
+    
+                
             </div>
-
-            <div class="skill">
-                <i class="fa-brands fa-js"></i>
-                <p>jQuery</p>
-            </div>
-
-            <div class="skill">
-                <i class="fa-brands fa-php"></i>
-                <p>PHP</p>
-            </div>
-
-            <div class="skill">
-                <i class="fa-brands fa-wordpress"></i>
-                <p>Wordpress</p>
-            </div>
-
-            <div class="skill">
-                <i class="fa-brands fa-git-square"></i>
-                <p>Git</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="section-title">
-            <hr>
-            <h2>Contact</h2>
-        </div>
-
-        <div class="contact-container">
-            <a href="" class=contact-element>
-                <i class="bi bi-linkedin"></i>
-                <p>Linkedin</p>
-            </a>
-
-            <a href="" class=contact-element>
-                <i class="bi bi-envelope"></i>
-                <p>Mail</p>
-            </a>
-
-            <a href="" class=contact-element>
-                <i class="bi bi-github"></i>
-                <p>Github</p>
-            </a>
-
-            
-        </div>
-    </section>
-
-    <footer>
-        <p>Made with passion by Andrei</p>
-    </footer>
+        </section>
+    
+        <footer>
+            <p>Made with passion by Andrei</p>
+        </footer>
+    </div>
 </body>
 
 </html>

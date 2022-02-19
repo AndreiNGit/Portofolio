@@ -44,7 +44,12 @@ h3 {
     text-align: center;
 }
 
+.container {
+    padding: 0 $container-margin;
+}
+
 .blue-container {
     color: $text-color;
     background-color: $primary-color;
+    border-color: $text-color;
 }

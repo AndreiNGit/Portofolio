@@ -5,7 +5,10 @@ function RGBA(e, alpha) { //e = jQuery element, alpha = background-opacity
 
 $(document).ready(function() {
     //SETUP
-    $("#header-nav").hide();
+    if($(document).width() <= 768)
+        $("#header-nav").hide();
+    else
+        $("#header-nav").show();
 
     //MENU
     $(".fa-bars").on("click", function() {

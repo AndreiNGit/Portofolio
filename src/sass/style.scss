@@ -7,7 +7,6 @@ header {
     left: 0;
     width: 100%;
     background-color: rgba($color: utils.$primary-color, $alpha: 0.0);
-
     #header-section {
         width: 100%;
         display: flex;
@@ -32,7 +31,7 @@ header {
     }
 
     #header-nav {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -69,7 +68,6 @@ header {
         color: utils.$text-color;
         font-size: 2.5rem;
         font-weight: 500;
-        margin: 0 utils.$container-margin;
         text-align: center;
     }
 }
@@ -78,12 +76,12 @@ header {
 #about-me-container {
     display: flex;
     flex-direction: column;
-    margin: 0 utils.$container-margin;
     #about-me-avatar {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         
         * {
             margin-bottom: 20px;
@@ -100,6 +98,7 @@ header {
 
     #about-me-text {
         text-align: center;
+        padding: 30px 0;
     }
 }
 
@@ -108,7 +107,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 utils.$container-margin;
     .school {
         margin-bottom: 25px;
         border-left-color: utils.$primary-color;
@@ -130,7 +128,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 utils.$container-margin;
 
     .work {
         margin-bottom: 35px;
@@ -144,13 +141,15 @@ header {
 /* -------------------- SKILLS ME STYLE ----------------------*/
 #skills-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 utils.$container-margin;
 
     > * {
         margin-bottom: 70px;
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 }
 
@@ -177,7 +176,6 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0 utils.$container-margin;
 }
 
 .project {
@@ -211,14 +209,13 @@ header {
 /* -------------------- CONTACT STYLE ----------------------*/
 #contact-container {
     min-height: 300px;
-    margin: 0 utils.$container-margin;
-    margin-bottom: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-
+    padding-top: 25px;
+    padding-bottom: 25px;
     a {
         display: flex;
         flex-direction: column;
@@ -227,9 +224,11 @@ header {
         text-decoration: none;
         border: 2px solid black;
         border-radius: 20px;
-        color: utils.$text-color-dark;
         width: 170px;
         height: 120px;
+        color: utils.$text-color;
+        background-color: utils.$primary-color;
+        border-color: utils.$text-color;
 
         i {
             font-size: 2rem;
@@ -249,5 +248,25 @@ footer {
     color: utils.$text-color;
     background-color: utils.$primary-color;
     padding: 20px 20px;
-    margin: 0 utils.$container-margin;
+}
+
+/* -------------------- DESKTOP STYLE ----------------------*/
+
+@media only screen and (min-width: 768px) {
+/* -------------------- DESKTOP STYLE ----------------------*/
+    #nav-btn {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        #header-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+    }
 }

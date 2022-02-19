@@ -18,7 +18,9 @@
             <a href="#" class="nav-link">
                 <p id="Logo">Andrei Nicusor</p>
             </a>
-            <i class="fa-solid fa-bars"></i>
+            <div id="nav-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
         <div id="header-nav">
             <a href="#about-me" class="nav-link">About me</a>
@@ -32,7 +34,9 @@
 
     <div class="content">
         <section id="hero">
-            <p id="hero-text">echo "Hello, world!"</p>
+            <div class="container">
+                <p id="hero-text">echo "Hello, world!"</p>
+            </div>
         </section>
     
         <section id="about-me">
@@ -42,20 +46,25 @@
             </div>
     
             <div id="about-me-container">
-                <div id="about-me-avatar">
-                    <h3>Who am I?</h3>
-                    <img src="/src/images/main-image.jpg" alt="Profile image" id="profile-image">
-                    <p class="name">Andrei Nicusor Andrei</p>
-                    <p class="specializations">Passionate Full-Stack Web Developer, Native speaker of coding</p>
+                <div class="container">
+                    <div id="about-me-avatar">
+                        <h3>Who am I?</h3>
+                        <img src="/src/images/main-image.jpg" alt="Profile image" id="profile-image">
+                        <p class="name">Andrei Nicusor Andrei</p>
+                        <p class="specializations">Passionate Full-Stack Web Developer, Native speaker of coding</p>
+                    </div>
                 </div>
-    
-                <div id="about-me-text" class="">
-                    <h3>Introduction</h3>
-                    <p>Let me introduce myself. I am a very ambitious and curious person. I've have a passion for the IT since I was a teenager. 
-                        I've started to learn a lot of things about programming since then.
-                        My main passion is for Web Development (Full Stack) because I am really curious about how things are working on the server and I like to make a nice looking UI for a better UX.
-                    </p>
+
+                <div class="container blue-container">
+                    <div id="about-me-text" class="">
+                        <h3>Introduction</h3>
+                        <p>Let me introduce myself. I am a very ambitious and curious person. I've have a passion for the IT since I was a teenager. 
+                            I've started to learn a lot of things about programming since then.
+                            My main passion is for Web Development (Full Stack) because I am really curious about how things are working on the server and I like to make a nice looking UI for a better UX.
+                        </p>
+                    </div>
                 </div>
+
             </div>
         </section>
     
@@ -66,9 +75,8 @@
             </div>
     
             <div id="education-container">
-                <div id="academic">
+                <div id="academic" class="container">
                     <h3>School</h3>
-    
                     <div class="school">
                         <p>School: The Web</p>
                         <p>Graduation: NaN</p>
@@ -88,7 +96,7 @@
                     </div>
                 </div>
     
-                <div id="certifications">
+                <div id="certifications" class="container">
                     <h3>Certifications</h3>
                     <ul>
                         <li>Responsive Web Design - freeCodeCamp</li>
@@ -104,7 +112,7 @@
                 <hr>
                 <h2>Experience</h2>
             </div>
-                <div id="experience-container">
+                <div id="experience-container" class="container">
                     <div class="work">
                         <h3>Online Marketing Specialist</h3>
                         <p>Period: Jan 2021 - Present</p>
@@ -150,7 +158,7 @@
             </div>
 
             <div id="skills-container">
-                <div id="hard-skills">
+                <div id="hard-skills" class="container">
                     <h3>Hard Skills</h3>
                     <div class="skill">
                         <i class="fa-brands fa-html5"></i>
@@ -202,7 +210,7 @@
                         <p>SQL</p>
                     </div>
                 </div>
-                <div id="soft-skills">
+                <div id="soft-skills" class="blue-container container">
                     <h3>Soft-Skills</h3>
 
                     <div class="skill">
@@ -239,7 +247,7 @@
                 <h2>Projects</h2>
             </div>
 
-            <div id="projects-container">
+            <div id="projects-container" class="container">
                 <a href="" class="project">
                     <h4 class="project-title">TrendlyMag</h4>
                     <i class="fa-solid fa-cart-shopping"></i>
@@ -269,7 +277,7 @@
                 <h2>Contact</h2>
             </div>
     
-            <div id="contact-container">
+            <div id="contact-container" class="container blue-container">
                 <a href="" class=contact-element>
                     <i class="bi bi-linkedin"></i>
                     <p>Linkedin</p>

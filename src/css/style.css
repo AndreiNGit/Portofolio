@@ -46,6 +46,10 @@ h3 {
   border-color: #fff;
 }
 
+.hidden {
+  display: none !important;
+}
+
 /* -------------------- HEADER STYLE ----------------------*/
 header {
   position: fixed;
@@ -55,7 +59,6 @@ header {
   background-color: rgba(2, 21, 44, 0);
 }
 header #header-section {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,7 +68,7 @@ header #header-section {
   padding-right: 25px;
   padding-bottom: 25px;
 }
-header #header-section p {
+header #header-section a {
   font-weight: bolder;
   font-size: 1.5rem;
   text-decoration: none;
@@ -75,7 +78,7 @@ header #header-section i {
   font-size: 1.5rem;
 }
 header #header-nav {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -88,12 +91,6 @@ header #header-nav a {
   margin-right: 20px;
   color: #fff;
   padding: 10px 0;
-}
-
-#navlist {
-  display: none;
-  display: flex;
-  flex-direction: column;
 }
 
 /* ----------------- HERO TAG STYLE --------------------*/
@@ -281,14 +278,77 @@ footer {
 
   header {
     display: flex;
+    justify-content: space-between;
+    align-content: center;
   }
   header #header-nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     gap: 15px;
     margin-bottom: 15px;
+  }
+  header #header-nav a:hover {
+    border-bottom: 1px solid #fff;
+  }
+
+  #about-me #about-me-container {
+    flex-direction: row;
+    width: 100%;
+  }
+  #about-me #about-me-container .container:nth-child(1) {
+    width: 40%;
+  }
+  #about-me #about-me-container .container:nth-child(2) {
+    width: 60%;
+  }
+  #about-me #about-me-container .container:nth-child(2) #about-me-text {
+    height: 100%;
+  }
+  #about-me #about-me-container .container:nth-child(2) #about-me-text h3 {
+    height: 30%;
+  }
+  #about-me #about-me-container .container:nth-child(2) #about-me-text p {
+    height: 70%;
+  }
+
+  #education-container {
+    flex-direction: row;
+    width: 100%;
+  }
+  #education-container #academic {
+    width: 50%;
+    height: 100%;
+  }
+  #education-container #certifications {
+    align-self: flex-start;
+    height: 100%;
+    width: 50%;
+  }
+
+  #skills-container {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+  }
+  #skills-container #hard-skills {
+    width: 50%;
+  }
+  #skills-container #soft-skills {
+    align-self: stretch;
+    width: 50%;
+  }
+  #skills-container #soft-skills h3 {
+    height: 20%;
+  }
+
+  #projects a:hover {
+    box-shadow: 1px 2px;
+  }
+
+  #contact-container a:hover {
+    background-color: #020d1b;
   }
 }
 

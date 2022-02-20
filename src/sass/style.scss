@@ -8,7 +8,6 @@ header {
     width: 100%;
     background-color: rgba($color: utils.$primary-color, $alpha: 0.0);
     #header-section {
-        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -18,7 +17,7 @@ header {
         padding-right: 25px;
         padding-bottom: 25px;
 
-        p {
+        a {
             font-weight: bolder;
             font-size: 1.5rem;
             text-decoration: none;
@@ -31,7 +30,7 @@ header {
     }
 
     #header-nav {
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -47,13 +46,6 @@ header {
         }
     }
 }
-
-#navlist {
-    display: none;
-    display: flex;
-    flex-direction: column;
-}
-
 
 /* ----------------- HERO TAG STYLE --------------------*/
 #hero {
@@ -107,6 +99,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .school {
         margin-bottom: 25px;
         border-left-color: utils.$primary-color;
@@ -260,13 +253,88 @@ footer {
 
     header {
         display: flex;
+        justify-content: space-between;
+        align-content: center;
         #header-nav {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            align-items: center;
+            align-content: center;
             gap: 15px;
             margin-bottom: 15px;
+
+            a:hover {
+                border-bottom: 1px solid utils.$text-color;
+            }
+        }
+    }
+
+    #about-me {
+        #about-me-container {
+            flex-direction: row;
+            width: 100%;
+            .container:nth-child(1) {
+                width: 40%;
+            }
+            .container:nth-child(2) {
+                width: 60%;
+                #about-me-text {
+                    height: 100%;
+                    h3 {
+                        height: 30%;
+                    }
+    
+                    p {
+                        height: 70%;
+                    }
+                }
+            }
+        }
+    }
+
+    #education-container {
+        flex-direction: row;
+        width: 100%;
+        
+        #academic {
+            width: 50%;
+            height: 100%;
+        }
+
+        #certifications {
+            align-self: flex-start;
+            height: 100%;
+            width: 50%;
+        }
+    }
+
+    #skills-container {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        #hard-skills {
+            width: 50%;
+        }
+
+        #soft-skills {
+            align-self: stretch;
+            width: 50%;
+
+            h3 {
+                height: 20%;
+            }
+        }
+    }
+
+    #projects {
+        a:hover {
+            box-shadow: 1px 2px;
+        }
+    }
+
+    #contact-container {
+        a:hover {
+            background-color: #020d1b;
         }
     }
 }
